@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EduRoute</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">EduRoute</a>
+
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Team
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#team">Team Members</a>
+                        <a class="dropdown-item" href="#teams">Departments</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#connect">Connect</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/pexels-pachon-in-motion-426015731-18419508.jpg" class="d-block w-100" alt="First slide" style="max-height: 600px;">
+            <div class="carousel-caption text-center">
+                <h1 class="display-3 text-white animate__animated animate__fadeInDown">EduRoute</h1>
+                <h3 class="text-white animate__animated animate__fadeInUp animate__delay-0.5s">Your ultimate guide to personalized learning and career growth.</h3>
+                <button class="btn btn-primary btn-lg ripple animate__animated animate__fadeInUp animate__delay-1s">Get Started</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/pexels-steve-28494632.jpg" class="d-block w-100" alt="Second slide" style="max-height: 600px;">
+        </div>
+        <div class="carousel-item">
+            <img src="img/pexels-googledeepmind-18069157.jpg" class="d-block w-100" alt="Third slide" style="max-height: 600px;">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<section class="what-we-do-section py-5" id="about">
+    <div class="container">
+        <h2 class="text-center mb-4 animate__animated animate__fadeIn">How EduRoute Guides You</h2>
+        <div class="underline mx-auto mb-5 animate__animated animate__fadeIn animate__delay-0.2s"></div>
+        <div class="service-columns d-flex justify-content-center animate__animated animate__fadeIn animate__delay-0.4s">
+            <div class="service-column card shadow p-4 mb-4">
+                <img src="img/personalized-learning.png" alt="Personalized Learning Paths" class="mb-3">
+                <h3>Personalized Learning Paths</h3>
+                <p>EduRoute is designed to provide students and professionals with a personalized learning path to guide them through the educational journey. We offer tailored resources, career advice, and tools to help you reach your learning and career goals efficiently.</p>
+            </div>
+            <div class="service-column card shadow p-4 mb-4">
+                <img src="img/counselling.png" alt="Career Advice & Guidance" class="mb-3">
+                <h3>Career Advice & Guidance</h3>
+                <p>EduRoute is designed to provide students and professionals with a personalized learning path to guide them through the educational journey. We offer tailored resources, career advice, and tools to help you reach your learning and career goals efficiently.</p>
+            </div>
+            <div class="service-column card shadow p-4 mb-4">
+                <img src="img/procedure.png" alt="Suggested Courses & Roadmaps" class="mb-3">
+                <h3>Suggested Courses & Roadmaps</h3>
+                <p>EduRoute is designed to provide students and professionals with a personalized learning path to guide them through the educational journey. We offer tailored resources, career advice, and tools to help you reach your learning and career goals efficiently.</p>
+            </div>
+        </div>
+        <div class="all-services-button-container animate__animated animate__fadeInUp animate__delay-0.6s">
+            <a href="#" class="learn-more-button btn">Start your journey</a>
+        </div>
+    </div>
+</section>
+
+<section class="team-section py-5" id="team">
+    <div class="container">
+        <h2 class="text-center mb-4 animate__animated animate__fadeIn">Our Team Members</h2>
+        <div class="underline mx-auto mb-5 animate__animated animate__fadeIn animate__delay-0.2s"></div>
+        <div class="row justify-content-center animate__animated animate__fadeIn animate__delay-0.4s">
+            <div class="col-lg-4 col-md-6 mb-4 team-card-col">
+                <div class="team-card bg-white rounded shadow-sm p-3">
+                    <div class="profile-picture rounded-circle overflow-hidden mx-auto mb-3">
+                        <img src="img/team-member1.jpg" alt="Team Member 1" class="img-fluid">
+                    </div>
+                    <h3 class="h5 mb-2 font-weight-bold">Team Member 1 Name</h3>
+                    <p class="text-muted">Short description or role</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 team-card-col">
+                <div class="team-card bg-white rounded shadow-sm p-3">
+                    <div class="profile-picture rounded-circle overflow-hidden mx-auto mb-3">
+                        <img src="img/team-member2.jpg" alt="Team Member 2" class="img-fluid">
+                    </div>
+                    <h3 class="h5 mb-2 font-weight-bold">Team Member 2 Name</h3>
+                    <p class="text-muted">Short description or role</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 team-card-col">
+                <div class="team-card bg-white rounded shadow-sm p-3">
+                    <div class="profile-picture rounded-circle overflow-hidden mx-auto mb-3">
+                        <img src="img/team-member3.jpg" alt="Team Member 3" class="img-fluid">
+                    </div>
+                    <h3 class="h5 mb-2 font-weight-bold">Team Member 3 Name</h3>
+                    <p class="text-muted">Short description or role</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 team-card-col">
+                <div class="team-card bg-white rounded shadow-sm p-3">
+                    <div class="profile-picture rounded-circle overflow-hidden mx-auto mb-3">
+                        <img src="img/team-member4.jpg" alt="Team Member 4" class="img-fluid">
+                    </div>
+                    <h3 class="h5 mb-2 font-weight-bold">Team Member 4 Name</h3>
+                    <p class="text-muted">Short description or role</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 team-card-col">
+                <div class="team-card bg-white rounded shadow-sm p-3">
+                    <div class="profile-picture rounded-circle overflow-hidden mx-auto mb-3">
+                        <img src="img/team-member5.jpg" alt="Team Member 5" class="img-fluid">
+                    </div>
+                    <h3 class="h5 mb-2 font-weight-bold">Team Member 5 Name</h3>
+                    <p class="text-muted">Short description or role</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 team-card-col">
+                <div class="team-card bg-white rounded shadow-sm p-3">
+                    <div class="profile-picture rounded-circle overflow-hidden mx-auto mb-3">
+                        <img src="img/team-member6.jpg" alt="Team Member 6" class="img-fluid">
+                    </div>
+                    <h3 class="h5 mb-2 font-weight-bold">Team Member 6 Name</h3>
+                    <p class="text-muted">Short description or role</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 team-card-col">
+                <div class="team-card bg-white rounded shadow-sm p-3">
+                    <div class="profile-picture rounded-circle overflow-hidden mx-auto mb-3">
+                        <img src="img/team-member7.jpg" alt="Team Member 7" class="img-fluid">
+                    </div>
+                    <h3 class="h5 mb-2 font-weight-bold">Team Member 7 Name</h3>
+                    <p class="text-muted">Short description or role</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 team-card-col">
+                <div class="team-card bg-white rounded shadow-sm p-3">
+                    <div class="profile-picture rounded-circle overflow-hidden mx-auto mb-3">
+                        <img src="img/team-member8.jpg" alt="Team Member 8" class="img-fluid">
+                    </div>
+                    <h3 class="h5 mb-2 font-weight-bold">Team Member 8 Name</h3>
+                    <p class="text-muted">Short description or role</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 team-card-col">
+                <div class="team-card bg-white rounded shadow-sm p-3">
+                    <div class="profile-picture rounded-circle overflow-hidden mx-auto mb-3">
+                        <img src="img/team-member9.jpg" alt="Team Member 9" class="img-fluid">
+                    </div>
+                    <h3 class="h5 mb-2 font-weight-bold">Team Member 9 Name</h3>
+                    <p class="text-muted">Short description or role</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="teams-section py-5 bg-light" id="teams">
+    <div class="container">
+        <h2 class="text-center mb-4 animate__animated animate__fadeIn">Our Expert Teams</h2>
+        <div class="underline mx-auto mb-5 animate__animated animate__fadeIn animate__delay-0.2s"></div>
+        <div class="row justify-content-center animate__animated animate__fadeIn animate__delay-0.4s">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-block p-4 bg-white rounded shadow-sm animate__animated animate__fadeInUp animate__delay-0.6s">
+                    <h3 class="team-name mb-3 text-accent font-weight-bold">Data Science</h3>
+                    <p class="team-description text-muted">Our Data Science team excels in extracting valuable insights from complex data sets. We leverage statistical analysis, machine learning, and data visualization techniques to drive data-informed decisions and create innovative solutions.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-block p-4 bg-white rounded shadow-sm animate__animated animate__fadeInUp animate__delay-0.7s">
+                    <h3 class="team-name mb-3 text-accent font-weight-bold">Artificial Intelligence (AI)</h3>
+                    <p class="team-description text-muted">The AI team is dedicated to developing intelligent systems and applications. We specialize in areas like natural language processing, computer vision, and neural networks to build cutting-edge AI solutions that enhance user experiences and automate complex processes.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-block p-4 bg-white rounded shadow-sm animate__animated animate__fadeInUp animate__delay-0.8s">
+                    <h3 class="team-name mb-3 text-accent font-weight-bold">Web Development (Front End)</h3>
+                    <p class="team-description text-muted">Our Front End Web Development team focuses on crafting engaging and user-friendly web interfaces. We are experts in HTML, CSS, and JavaScript, and modern front-end frameworks to build interactive, responsive, and visually appealing websites and web applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="connect-section py-5" id="connect">
+    <div class="container text-center">
+        <h2 class="mb-4 animate__animated animate__fadeIn">Connect With Us</h2>
+        <div class="underline mx-auto mb-5 animate__animated animate__fadeIn animate__delay-0.2s"></div>
+        <p class="lead animate__animated animate__fadeIn animate__delay-0.4s">
+            We are here to help you on your EduRoute. Contact us to learn more or get personalized guidance.
+        </p>
+        <a href="#" class="btn btn-primary btn-lg ripple animate__animated animate__fadeInUp animate__delay-0.6s">Contact Us</a>
+    </div>
+</section>
+
+
+<footer class="footer bg-accent text-light">
+    <div class="container footer-content py-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 footer-section">
+                <h3 class="h5 mb-3 font-weight-bold">About EduRoute</h3>
+                <p>EduRoute is designed to provide students and professionals with a personalized learning path to guide them through the educational journey. We offer tailored resources, career advice, and tools to help you reach your learning and career goals efficiently.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-section">
+                <h3 class="h5 mb-3 font-weight-bold">Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#teams">Departments</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-section">
+                <h3 class="h5 mb-3 font-weight-bold">Contact Us</h3>
+                <p>Email: <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></p>
+                <p>Phone: +1-XXX-XXX-XXXX</p>
+                <p>Address: 123 Learning Way, EduCity</p>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-section footer-social">
+                <h3 class="h5 mb-3 font-weight-bold">Follow Us</h3>
+                <div class="social-icons d-flex gap-3">
+                    <a href="#" target="_blank" class="text-light"><img src="img/facebook-icon.svg" alt="Facebook" class="social-icon"></a>
+                    <a href="#" target="_blank" class="text-light"><img src="img/twitter-icon.svg" alt="Twitter" class="social-icon"></a>
+                    <a href="#" target="_blank" class="text-light"><img src="img/linkedin-icon.svg" alt="LinkedIn" class="social-icon"></a>
+                    <a href="#" target="_blank" class="text-light"><img src="img/instagram-icon.svg" alt="Instagram" class="social-icon"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom text-center py-3 bg-accent">
+        <p class="mb-0">&copy; 2025 EduRoute. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let buttons = document.querySelectorAll('.ripple');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                let rect = this.getBoundingClientRect();
+                let x = e.clientX - rect.left;
+                let y = e.clientY - rect.top;
+                let ripple = document.createElement('span');
+
+                // Set the size and position of the ripple based on the button size
+                let size = Math.max(this.offsetWidth, this.offsetHeight);
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = (x - size / 2) + 'px';
+                ripple.style.top = (y - size / 2) + 'px';
+
+                // Append the ripple to the button
+                this.appendChild(ripple);
+
+                // Remove the ripple after the animation ends
+                setTimeout(() => ripple.remove(), 600);  // Matches the animation duration
+            });
+        });
+    });
+</script>
+</body>
+</html>

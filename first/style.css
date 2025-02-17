@@ -1,0 +1,569 @@
+/* --- Root Color Variables --- */
+:root {
+    --primary: #007a6c;
+    --secondary: #d3b58d;
+    --accent: #36464e;
+    --background: #f5f5f5;
+    --text: #121212;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--accent); /* Default color fallback */
+    text-decoration: none;
+    letter-spacing: -0.05rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(to right, var(--primary), var(--secondary)); /* Gradient background */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent to show background */
+}
+
+.navbar-brand:hover {
+    -webkit-text-fill-color: var(--primary); /* Solid primary color on hover */
+    background: none; /* Remove gradient on hover */
+    color: var(--primary); /* Set color to primary for hover */
+    transform: scale(1.05);
+}
+
+
+h2 {
+    font-weight: bold;
+    color: var(--text);
+}
+
+h3 {
+    color: var(--text);
+}
+
+/* --- Navigation Styles --- */
+.navbar {
+    padding: 1rem 1.5rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text);
+    padding: 0.7rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item:active {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* --- Carousel Slider Styles --- */
+#slides .carousel-item {
+    position: relative;
+    min-height: 600px; /* Ensure carousel has a minimum height */
+    background-color: #333; /* Fallback background color */
+    overflow: hidden; /* Ensure content within carousel item is contained */
+}
+
+#slides .carousel-item img {
+    object-fit: cover; /* Cover container, cropping if necessary */
+    height: 600px; /* Set a fixed height for images */
+    width: 100%; /* Ensure image takes full width of carousel item */
+}
+
+
+#slides .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+}
+
+#slides .carousel-caption h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem #000;
+}
+
+#slides .carousel-caption h3 {
+    font-size: 1.8rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem #000;
+    margin-bottom: 2rem;
+}
+
+
+/* --- Buttons General Styles --- */
+.btn {
+    transition: all 0.3s ease;
+    position: relative;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    border: none;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: #f5f5f5;
+}
+
+.btn-primary:hover {
+    background-color: #005f56;
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 122, 108, 0.5);
+}
+
+/* Ripple Effect for Buttons */
+.ripple {
+    overflow: hidden;
+}
+
+.ripple span {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    pointer-events: none;
+    animation: ripple-animation 0.6s linear;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* --- Section Underline Style --- */
+.underline {
+    height: 0.5rem;
+    width: 3rem;
+    background-color: var(--secondary);
+    border-radius: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* --- What We Do Section Styles --- */
+.what-we-do-section {
+    background-color: var(--background);
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.what-we-do-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+/* 
+.what-we-do-section h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -0.5rem;
+    width: 3rem;
+    height: 0.25rem;
+    background-color: var(--secondary);
+    border-radius: 2rem;
+    transform: translateX(-50%);
+} */
+
+.what-we-do-section .service-columns {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.service-column {
+    flex: 1 1 300px; /* Allows columns to grow, shrink, basis width */
+    max-width: 370px;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-column:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.service-column img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.service-column:hover img {
+    opacity: 1;
+}
+
+
+.service-column h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.service-column p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.all-services-button-container {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.learn-more-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+}
+
+
+/* --- Team Section Styles --- */
+.team-section {
+    background-color: var(--background);
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.team-card-col {
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-card-col:hover {
+    transform: scale(1.05);
+}
+
+.team-card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 0.2rem solid var(--primary);
+}
+
+
+/* --- Teams Departments Section Styles --- */
+.teams-section.bg-light {
+    background-color: #f8f9fa !important; /* Ensure bg-light is slightly different from main background */
+}
+
+.teams-section.bg-light .team-block {
+    border-top-color: var(--primary); /* Use primary for team department border */
+    background-color: white; /* Team block background white in departments section */
+}
+
+
+.team-block {
+    text-align: center;
+    border-top: 0.3rem solid var(--secondary);
+    border-radius: 0.5rem;
+    padding: 2rem 1.5rem !important;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.08);
+    background-color: #f0f0f0; /* Lighter background for team blocks */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.team-block:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.3rem);
+}
+
+
+.team-block .team-name {
+    font-size: 1.7rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+    color: var(--accent); /* Accent color for team names */
+}
+
+.team-block .team-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #6a6a6a; /* Slightly darker muted text for descriptions */
+    margin-bottom: 0;
+}
+
+/* --- Connect Section Styles --- */
+.connect-section {
+    background-color: var(--background);
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.connect-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.connect-section p.lead {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+
+/* --- Footer Styles --- */
+.footer {
+    background-color: var(--accent);
+    color: #f8f9fa;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.footer-content {
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.2);
+}
+
+.footer-section {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.footer-section h3 {
+    color: #f8f9fa;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--secondary);
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.footer-social .social-icons img {
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social .social-icons img:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #f8f9fa;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(245, 245, 245, 0.2);
+}
+
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 992px) {
+    #slides .carousel-caption h1 {
+        font-size: 3rem;
+    }
+    #slides .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+    .what-we-do-section h2,
+    .team-section h2,
+    .connect-section h2,
+    .teams-section h2 {
+        font-size: 2.2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #slides .carousel-caption {
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.7); /* Slightly darker background for better readability on mobile */
+    }
+
+    #slides .carousel-caption h1 {
+        font-size: 2rem;
+    }
+    #slides .carousel-caption h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    .what-we-do-section,
+    .team-section,
+    .connect-section,
+    .teams-section {
+        padding: 3rem 1rem;
+    }
+    .what-we-do-section h2,
+    .team-section h2,
+    .connect-section h2,
+    .teams-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .what-we-do-section .service-columns {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.5rem;
+        gap: 1.5rem;
+    }
+    .service-column {
+        width: 90%;
+        max-width: none;
+        padding: 1.5rem;
+    }
+    .service-column h3 {
+        font-size: 1.5rem;
+    }
+    .service-column p {
+        font-size: 1rem;
+    }
+    .all-services-button-container {
+        margin-top: 2rem;
+    }
+    .learn-more-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .footer {
+        padding-top: 3rem;
+    }
+
+    .footer-content {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+    .footer-section p,
+    .footer-section ul,
+    .footer-section a {
+        font-size: 0.95rem;
+    }
+
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+    .footer-bottom {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #slides .carousel-caption h1 {
+        font-size: 1.7rem;
+    }
+    #slides .carousel-caption h3 {
+        font-size: 1rem;
+    }
+    .what-we-do-section h2,
+    .team-section h2,
+    .connect-section h2,
+    .teams-section h2 {
+        font-size: 1.8rem;
+    }
+    .service-column h3 {
+        font-size: 1.4rem;
+    }
+}
